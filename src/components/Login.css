@@ -1,0 +1,144 @@
+/* Main container divided into left and right sections */
+.login-container {
+    display: flex;
+    height: 150vh;
+    width: 100vw;
+    justify-content: space-between;
+    background-image: url('/icons/wallpaper3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 150vh;
+    margin: 0;
+  }
+  
+  /* Left section: team logo, team heading, and grid for team members */
+  .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+   
+  }
+  
+  .logo {
+    width: 350px;
+    height: auto;
+    margin-bottom: 80px;
+    border-radius: 50%;
+  }
+  
+  /* Styling for team member grid */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 120px;
+    margin-top: -10px;
+  }
+  
+  .team-member {
+    text-align: center;
+    position: relative;
+    color: black;
+    width: 200px;
+    height: 150px; 
+  }
+  
+  .team-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .team-member span {
+    display: none;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 24px;
+  }
+  
+  /* Hover effect for enlarging image and showing name */
+  .team-member:hover .team-pic {
+    transform: scale(1.7);
+  }
+  .logo:hover {
+    transform: scale(1.7);
+  }
+  
+  .team-member:hover span {
+    display: block;
+  }
+  
+  /* Right section: location input form */
+  .right-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .login-box {
+    background-color: beige;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    height: 250px;
+    margin-top: -900px;
+    margin-left: 400px;
+  }
+  
+  .login-box input {
+    padding: 25px;
+    margin: 10px 0;
+    border: 1px solid #004d40;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 40px;
+
+  }
+  .login-box h2{
+    font-size: 30px;
+    color: black;
+  }
+  .login-box button {
+    padding: 10px 20px;
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  .login-box button:hover {
+    background-color: #00796b;
+  }
+  .left-section h2{
+    font-size: 60px;
+    margin-bottom: 420px;
+    
+    font-weight: bold;
+    background: linear-gradient(45deg, #f39c12, #e74c3c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 
+      3px 3px 0px rgba(0,0,0,0.1),
+      6px 6px 0px rgba(0,0,0,0.1),
+      9px 9px 0px rgba(0,0,0,0.1),
+      12px 12px 0px rgba(0,0,0,0.1);
+  }

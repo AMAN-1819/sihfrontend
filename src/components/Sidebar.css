@@ -7,16 +7,7 @@
     
     
   }
-  .search-bar{
-    border: 3px solid black;
-    border-radius: 50px;
-    padding: 20px;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    background-color: aquamarine
-
-
-  }
+  
   
   .search-bar input {
     width: 100%;
@@ -109,7 +100,7 @@
     
    
     background-size: contain; /* Ensures the image scales properly */
-    border-radius: 10px; /* Rounds the corners */
+    border-radius: 40%; /* Rounds the corners */
     box-shadow: none; /* No shadow */
     padding: 5px;
     color: #ffffff; /* Text color if there’s any text */
@@ -169,6 +160,6 @@
     width: 100%; /* Make sure the image covers the container */
     height: 100%;
     object-fit: cover; /* Ensure the image doesn't stretch */
-    animation: waterWave 5s linear infinite; /* Apply the wave animation */
+    animation: waterWave 7s linear infinite; /* Apply the wave animation */
   }
   
