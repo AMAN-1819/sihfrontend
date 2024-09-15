@@ -5,10 +5,10 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sub"><div className="search-bar">
-        <input type="text" placeholder="Search city" />
+        
       </div>
       <div className="photo">
-      <img src="/icons/water1.PNG" alt="Cloudy"  />
+      <img src="/icons/logo.jpeg"   />
       </div>
       <div className="location-info">
         <h2>Buxar, Bihar</h2>
